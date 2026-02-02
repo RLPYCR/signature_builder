@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 
-import type { BasicTool } from '~/composables/signatures/types'
+import type { BasicTool } from '@/composables/signatures/types'
 
 import * as Base from '@/components/templates/components/base'
 

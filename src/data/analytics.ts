@@ -1,4 +1,7 @@
-import type { AnalyticsItem } from '@/composables/signatures/types'
+export interface AnalyticsItem {
+  name: string
+  value: string
+}
 
 export const options: AnalyticsItem[] = [
   // Socials
