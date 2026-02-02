@@ -1,42 +1,17 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".github/logo-white.png">
-    <source media="(prefers-color-scheme: light)" srcset=".github/logo-black.png">
-    <img src=".github/logo-black.png" width="100" alt="MySigMail Logo" />
-  </picture>
+  <img src="public/REMAX_Joint.png" width="220" alt="REMAX Logo" />
 </p>
 
+<h1 align="center">REMAX Signature Builder</h1>
 <p align="center">
-  <img src=".github/hero.png" width="500" alt="MySigMail - Email Signature Generator" />
+  <strong>Email signature generator for REMAX teams.</strong>
 </p>
-
-<h1 align="center">MySigMail</h1>
-<p align="center">
-  <strong>An open-source email signature generator for Gmail, Outlook, Apple Mail, etc.</strong>
-  <br>
-  Build a sleek, professional-looking signature that enhances your brand.
-</p>
-
-<p align="center">
-  <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/antonreshetov/mysigmail">
-  <img alt="GitHub" src="https://img.shields.io/github/license/antonreshetov/mysigmail">
-</p>
-
-<p align="center" >
-  <a href="https://www.producthunt.com/posts/mysigmail-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=142330&theme=dark&period=daily" alt="MySigMail - UI email signature generator on GitHub | Product Hunt Embed" style="width: 200px;" /></a>
-</p>
-
-## About
-Creating an email signature is not a trivial task, especially for non-technical people.
-Most existing solutions are either paid or closed-source.
-
-**MySigMail** makes it easy, free, and open-source.
-Let’s make creating professional signatures accessible for everyone!
 
 ## Features
+- **Easy copy** – one-click “Copy Signature”
 - **Customization** – fonts, colors, avatar shapes, social icons, custom fields
 - **Templates** – ready-to-use layouts for quick start
-- **Add-ons** – disclaimer, call-to-action, and more
+- **Brand defaults** – YCR/Connect logos and company defaults
 
 ## Development
 
@@ -47,8 +22,6 @@ The project uses Bun for building and running. Please make sure you have [Bun](h
 ### Quick Start
 
 ```bash
-git clone https://github.com/antonreshetov/mysigmail
-cd mysigmail
 bun install
 bun run dev
 ```
@@ -62,48 +35,22 @@ Create a `.env` file in the root directory and add the following variables:
 VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 VITE_SUPABASE_BUCKET=
+VITE_REPO=
+
+VITE_YCR_LOGO_URL=
+VITE_CONNECT_LOGO_URL=
+VITE_YCR_WEBSITE_URL=
+VITE_CONNECT_WEBSITE_URL=
 ```
 
 Your Supabase storage bucket must be public for direct uploads to work.
 
-## SaaS Version
-Don’t want to deal with setup and running locally?
+## URL Parameters
+Pre-fill fields via query params:
 
-Use the **[MySigMail](https://mysigmail.com)** – a production-ready version of app, hosted and packed with extra features.
-
-### Key Features
-- **Manage multiple signatures** – create, save, and switch between multiple signatures effortlessly, all stored safely on our servers
-- **Shared signatures** – share ready-to-use signatures that your teammates can copy and install
-- **Analytics** – track clicks and engagement from your email signature
-- **Presets library** – professionally designed signature styles you can apply in one click
-- **Image hosting** – reliable CDN hosting for logos, banners, and photos
-
-### Tools
-Extend your signatures with powerful marketing and branding tools:
-
-- **Sign Off** – create a handwritten signature and add it as a personal sign-off to your email signature
-- **URL Builder** – generate UTM-tagged URLs and seamlessly track your campaigns in Google Analytics
-- **Banner Maker** *(coming soon)* – design and add eye-catching banners to promote events, offers, or announcements directly in your email signature
-
-Check out **[MySigMail](https://mysigmail.com)** and start creating professional email signatures in seconds.
-
-## Contribution Policy
-
-MySigMail is an open-source project but only accepting contributions for bug fixes. To get started, please read [CONTRIBUTING.md](https://github.com/antonreshetov/mysigmail/blob/master/CONTRIBUTING.md) for more details.
-
-## Follow
- - News and updates on [X](https://x.com/mysigmail).
- - [Discussions](https://github.com/antonreshetov/mysigmail/discussions).
+- `fullName`, `email`, `jobTitle`, `website`, `company`
+- `company=ycr` or `company=connect` auto-sets company, logo, and website
 
 ## License
 
-This project is licensed under the [AGPL-3.0](https://github.com/antonreshetov/mysigmail/blob/master/LICENSE).
-
-## Commercial Use
-
-For commercial use, please contact me for a commercial license at reshetov.art@gmail.com.
-
-By using this software, you agree to the terms of the license.
-
-Copyright (c) 2019-present, [Anton Reshetov](https://github.com/antonreshetov).
-# signature_builder
+This project is licensed under the [AGPL-3.0](LICENSE).
