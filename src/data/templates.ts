@@ -93,7 +93,7 @@ export function useTemplateData() {
     } as OptionsTool,
     addons: [] as AddonTool[],
     socials: [
-      {
+      /*{
         icon: 'facebook',
         value: '',
         label: 'Facebook',
@@ -112,7 +112,7 @@ export function useTemplateData() {
         icon: 'instagram',
         value: '',
         label: 'Instagram',
-      },
+      },*/
     ] as SocialTool[],
   }
 
