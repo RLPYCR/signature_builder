@@ -311,10 +311,14 @@ function applyUrlParams() {
   const website = params.get('website') || params.get('web')
   const jobTitle
     = params.get('jobTitle') || params.get('jobtitle') || params.get('job') || params.get('title')
+  const cellPhone = params.get('cell-phone') || params.get('mobile')
+  const officePhone = params.get('office-phone') || params.get('phone')
 
   setBasicValue('Full Name', fullName)
   setBasicValue('Email', email)
   setBasicValue('Job Title', jobTitle)
+  setBasicValue('Cell Phone', cellPhone)
+  setBasicValue('Office Phone', officePhone)
 
   if (company)
     applyCompanyPreset(company, company)

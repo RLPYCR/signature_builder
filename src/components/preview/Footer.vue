@@ -10,9 +10,9 @@ const repoUrl = import.meta.env.VITE_REPO
   >
     <div>©{{ year }} • REMAX</div>
     <div v-if="repoUrl">
-      <a
+          <a
         :href="repoUrl"
-        target="_blank"
+            target="_blank"
         rel="noopener noreferrer"
         class="underline underline-offset-2"
       >
