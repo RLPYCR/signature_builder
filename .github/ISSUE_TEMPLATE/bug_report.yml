@@ -1,5 +1,5 @@
 name: 🐞 Bug report
-description: Report an issue with MySigMail
+description: Report an issue with REMAX Signature Builder
 title: '[Bug]: '
 labels: [pending triage]
 body:
@@ -40,9 +40,9 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Follow our [Code of Conduct](https://github.com/antonreshetov/mysigmail/blob/master/CODE_OF_CONDUCT.md)
+        - label: Follow our Code of Conduct
           required: true
-        - label: Check that there isn't [already an issue](https://github.com/antonreshetov/mysigmail/issues) that reports the same bug to avoid creating a duplicate.
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
           required: true
-        - label: Check that this is a concrete bug. For Q&A open a [GitHub Discussion](https://github.com/antonreshetov/mysigmail/discussions).
+        - label: Check that this is a concrete bug. For Q&A open a GitHub Discussion.
           required: true

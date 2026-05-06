@@ -9,4 +9,4 @@
 
 ### Validations
 
-- [ ] Follow our [CONTRIBUTING](https://github.com/antonreshetov/mysigmail/blob/master/CONTRIBUTING.md) guide
+- [ ] Follow our CONTRIBUTING guide
